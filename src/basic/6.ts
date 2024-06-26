@@ -2,7 +2,10 @@ interface User {
   name: string;
   age: number;
   email: string;
-  address?: any;
+  address?: {
+    city: string;
+    country: string;
+  };
 }
 const mango: User = {
   name: "Mango",
